@@ -10,3 +10,10 @@ java_import(
     jars = ["gradle-api-2.14.1.jar"],
     visibility = ["//visibility:public"],
 )
+
+java_library(
+    name = "gradle-api.jar_neverlink",
+    neverlink = 1,
+    exports = [":gradle-api.jar"],
+    visibility = ["//visibility:public"],
+)
