@@ -48,7 +48,7 @@ filegroup(
 # do not use directly. Use //tools/base/build-system:gradle
 filegroup(
     name = "gradle-distrib-nightly",
-    srcs = ["gradle-3.3-20161129000109+0000-bin.zip"],
+    srcs = ["gradle-3.3-20161202145356+0000-bin.zip"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
 
@@ -58,6 +58,6 @@ filegroup(
 # //tools/base/build-system:gradle-api
 filegroup(
     name = "gradle-api-nightly",
-    srcs = ["gradle-api-3.3-20161129000109+0000.jar"],
+    srcs = ["gradle-api-3.3-20161202145356+0000.jar"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
