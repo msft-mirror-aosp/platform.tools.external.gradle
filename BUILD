@@ -20,13 +20,13 @@ filegroup(
 )
 
 #######
-# gradle 3.3-rc-1
+# gradle 3.3
 #######
 
 # do not use directly. Use //tools/base/build-system:gradle
 filegroup(
-    name = "gradle-distrib-3.3-rc-1",
-    srcs = ["gradle-3.3-rc-1-bin.zip"],
+    name = "gradle-distrib-3.3",
+    srcs = ["gradle-3.3-bin.zip"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
 
@@ -35,8 +35,8 @@ filegroup(
 # //tools/base/build-system:gradle-api_neverlink
 # //tools/base/build-system:gradle-api
 filegroup(
-    name = "gradle-api-3.3-rc-1",
-    srcs = ["gradle-api-3.3-rc-1.jar"],
+    name = "gradle-api-3.3",
+    srcs = ["gradle-api-3.3.jar"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
 
