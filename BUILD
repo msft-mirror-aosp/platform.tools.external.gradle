@@ -35,7 +35,7 @@ filegroup(
 # //tools/base/build-system:gradle-api_neverlink
 # //tools/base/build-system:gradle-api
 filegroup(
-    name = "gradle-api-3.4.1",
+    name = "gradle-api-3.4.1-jar",
     srcs = ["gradle-api-3.4.1.jar"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
@@ -59,4 +59,11 @@ filegroup(
     name = "gradle-api-nightly",
     srcs = ["gradle-api-4.0-20170406000015+0000.jar"],
     visibility = ["//tools/base/build-system:__pkg__"],
+)
+
+java_import(
+    name = "gradle-api-3.4.1",
+    jars = ["gradle-api-3.4.1.jar"],
+    tags = ["managed"],
+    visibility = ["//visibility:public"],
 )
