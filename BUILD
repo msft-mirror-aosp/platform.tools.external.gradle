@@ -40,6 +40,13 @@ filegroup(
     visibility = ["//tools/base/build-system:__pkg__"],
 )
 
+java_import(
+    name = "gradle-api-3.4.1",
+    jars = ["gradle-api-3.4.1.jar"],
+    tags = ["managed"],
+    visibility = ["//visibility:public"],
+)
+
 #######
 # gradle nightly
 #######
@@ -47,7 +54,7 @@ filegroup(
 # do not use directly. Use //tools/base/build-system:gradle
 filegroup(
     name = "gradle-distrib-nightly",
-    srcs = ["gradle-4.0-20170406000015+0000-bin.zip"],
+    srcs = ["gradle-4.0-20170417000025+0000-bin.zip"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
 
@@ -57,13 +64,6 @@ filegroup(
 # //tools/base/build-system:gradle-api
 filegroup(
     name = "gradle-api-nightly",
-    srcs = ["gradle-api-4.0-20170406000015+0000.jar"],
+    srcs = ["gradle-api-4.0-20170417000025+0000.jar"],
     visibility = ["//tools/base/build-system:__pkg__"],
-)
-
-java_import(
-    name = "gradle-api-3.4.1",
-    jars = ["gradle-api-3.4.1.jar"],
-    tags = ["managed"],
-    visibility = ["//visibility:public"],
 )
