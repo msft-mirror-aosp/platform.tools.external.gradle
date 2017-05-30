@@ -54,7 +54,7 @@ java_import(
 # do not use directly. Use //tools/base/build-system:gradle
 filegroup(
     name = "gradle-distrib-nightly",
-    srcs = ["gradle-4.0-milestone-1-bin.zip"],
+    srcs = ["gradle-4.0-rc-1-bin.zip"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
 
@@ -64,6 +64,6 @@ filegroup(
 # //tools/base/build-system:gradle-api
 filegroup(
     name = "gradle-api-nightly",
-    srcs = ["gradle-api-4.0-milestone-1.jar"],
+    srcs = ["gradle-api-4.0-rc-1.jar"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
