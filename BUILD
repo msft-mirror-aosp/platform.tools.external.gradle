@@ -48,13 +48,13 @@ java_import(
 )
 
 #######
-# gradle nightly
+# gradle 4.0
 #######
 
 # do not use directly. Use //tools/base/build-system:gradle
 filegroup(
-    name = "gradle-distrib-nightly",
-    srcs = ["gradle-4.0-rc-3-bin.zip"],
+    name = "gradle-distrib-4.0",
+    srcs = ["gradle-4.0-bin.zip"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
 
@@ -63,7 +63,14 @@ filegroup(
 # //tools/base/build-system:gradle-api_neverlink
 # //tools/base/build-system:gradle-api
 filegroup(
-    name = "gradle-api-nightly",
-    srcs = ["gradle-api-4.0-rc-3.jar"],
+    name = "gradle-api-4.0-jar",
+    srcs = ["gradle-api-4.0.jar"],
     visibility = ["//tools/base/build-system:__pkg__"],
+)
+
+java_import(
+    name = "gradle-api-4.0",
+    jars = ["gradle-api-4.0.jar"],
+    tags = ["managed"],
+    visibility = ["//visibility:public"],
 )
