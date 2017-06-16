@@ -1,4 +1,15 @@
 #######
+# Gradle 2.2.1
+#######
+
+# do not use directly. Use //tools/base/build-system:gradle
+filegroup(
+    name = "gradle-distrib-2.2.1",
+    srcs = ["gradle-2.2.1-bin.zip"],
+    visibility = ["//tools/base/build-system:__pkg__"],
+)
+
+#######
 # Gradle 2.14.1
 #######
 
