@@ -6,7 +6,7 @@
 filegroup(
     name = "gradle-distrib-2.2.1",
     srcs = ["gradle-2.2.1-bin.zip"],
-    visibility = ["//tools/base/build-system:__pkg__"],
+    visibility = ["//visibility:public"],
 )
 
 #######
