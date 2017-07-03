@@ -82,7 +82,6 @@ filegroup(
 java_import(
     name = "gradle-api-4.0",
     jars = ["gradle-api-4.0.jar"],
-    tags = ["managed"],
     visibility = ["//visibility:public"],
 )
 
@@ -110,6 +109,5 @@ filegroup(
 java_import(
     name = "gradle-api-4.1-milestone-1",
     jars = ["gradle-api-4.1-milestone-1.jar"],
-    tags = ["managed"],
     visibility = ["//visibility:public"],
 )
