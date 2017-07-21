@@ -91,8 +91,8 @@ java_import(
 
 # do not use directly. Use //tools/base/build-system:gradle
 filegroup(
-    name = "gradle-distrib-4.1-milestone-1",
-    srcs = ["gradle-4.1-milestone-1-bin.zip"],
+    name = "gradle-distrib-4.1",
+    srcs = ["gradle-4.1-rc-1-bin.zip"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
 
@@ -101,13 +101,13 @@ filegroup(
 # //tools/base/build-system:gradle-api_neverlink
 # //tools/base/build-system:gradle-api
 filegroup(
-    name = "gradle-api-4.1-milestone-1-jar",
-    srcs = ["gradle-api-4.1-milestone-1.jar"],
+    name = "gradle-api-4.1-jar",
+    srcs = ["gradle-api-4.1-rc-1.jar"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
 
 java_import(
-    name = "gradle-api-4.1-milestone-1",
-    jars = ["gradle-api-4.1-milestone-1.jar"],
+    name = "gradle-api-4.1",
+    jars = ["gradle-api-4.1-rc-1.jar"],
     visibility = ["//visibility:public"],
 )
