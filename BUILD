@@ -10,6 +10,17 @@ filegroup(
 )
 
 #######
+# Gradle 2.4
+#######
+
+# do not use directly. Use //tools/base/build-system:gradle
+filegroup(
+    name = "gradle-distrib-2.4",
+    srcs = ["gradle-2.4-bin.zip"],
+    visibility = ["//visibility:public"],
+)
+
+#######
 # Gradle 2.14.1
 #######
 
