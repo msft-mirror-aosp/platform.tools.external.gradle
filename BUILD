@@ -130,7 +130,7 @@ java_import(
 # do not use directly. Use //tools/base/build-system:gradle
 filegroup(
     name = "gradle-distrib-4.4",
-    srcs = ["gradle-4.4-rc-3-bin.zip"],
+    srcs = ["gradle-4.4-bin.zip"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
 
@@ -140,12 +140,12 @@ filegroup(
 # //tools/base/build-system:gradle-api
 filegroup(
     name = "gradle-api-4.4-jar",
-    srcs = ["gradle-api-4.4-rc-3.jar"],
+    srcs = ["gradle-api-4.4.jar"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
 
 java_import(
     name = "gradle-api-4.4",
-    jars = ["gradle-api-4.4-rc-3.jar"],
+    jars = ["gradle-api-4.4.jar"],
     visibility = ["//visibility:public"],
 )
