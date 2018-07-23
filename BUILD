@@ -74,3 +74,14 @@ filegroup(
     srcs = ["gradle-4.9-rc-2-bin.zip"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
+
+#######
+# gradle 4.9
+#######
+
+# do not use directly. Use //tools/base/build-system:gradle
+filegroup(
+    name = "gradle-distrib-4.9",
+    srcs = ["gradle-4.9-bin.zip"],
+    visibility = ["//tools/base/build-system:__pkg__"],
+)
