@@ -96,3 +96,14 @@ filegroup(
     srcs = ["gradle-4.10-bin.zip"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
+
+#######
+# gradle 4.10.1
+#######
+
+# do not use directly. Use //tools/base/build-system:gradle
+filegroup(
+    name = "gradle-distrib-4.10.1",
+    srcs = ["gradle-4.10.1-bin.zip"],
+    visibility = ["//tools/base/build-system:__pkg__"],
+)
