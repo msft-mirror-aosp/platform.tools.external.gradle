@@ -101,12 +101,12 @@ filegroup(
 )
 
 #######
-# gradle 5.0-rc-1
+# gradle 5.0
 #######
 
 # do not use directly. Use //tools/base/build-system:gradle
 filegroup(
-    name = "gradle-distrib-5.0-rc-1",
-    srcs = ["gradle-5.0-rc-1-bin.zip"],
+    name = "gradle-distrib-5.0",
+    srcs = ["gradle-5.0-bin.zip"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
