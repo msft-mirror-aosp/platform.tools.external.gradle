@@ -24,83 +24,6 @@ filegroup(
 )
 
 #######
-# gradle 4.6
-#######
-
-# do not use directly. Use //tools/base/build-system:gradle
-filegroup(
-    name = "gradle-distrib-4.6",
-    srcs = ["gradle-4.6-bin.zip"],
-    visibility = ["//tools/base/build-system:__pkg__"],
-)
-
-#######
-# gradle 4.8
-#######
-
-# do not use directly. Use //tools/base/build-system:gradle
-filegroup(
-    name = "gradle-distrib-4.8",
-    srcs = ["gradle-4.8-bin.zip"],
-    visibility = ["//tools/base/build-system:__pkg__"],
-)
-
-#######
-# gradle 4.9-rc-1
-#######
-
-# do not use directly. Use //tools/base/build-system:gradle
-filegroup(
-    name = "gradle-distrib-4.9-rc-1",
-    srcs = ["gradle-4.9-rc-1-bin.zip"],
-    visibility = ["//tools/base/build-system:__pkg__"],
-)
-
-#######
-# gradle 4.9-rc-2
-#######
-
-# do not use directly. Use //tools/base/build-system:gradle
-filegroup(
-    name = "gradle-distrib-4.9-rc-2",
-    srcs = ["gradle-4.9-rc-2-bin.zip"],
-    visibility = ["//tools/base/build-system:__pkg__"],
-)
-
-#######
-# gradle 4.9
-#######
-
-# do not use directly. Use //tools/base/build-system:gradle
-filegroup(
-    name = "gradle-distrib-4.9",
-    srcs = ["gradle-4.9-bin.zip"],
-    visibility = ["//tools/base/build-system:__pkg__"],
-)
-
-#######
-# gradle 4.10
-#######
-
-# do not use directly. Use //tools/base/build-system:gradle
-filegroup(
-    name = "gradle-distrib-4.10",
-    srcs = ["gradle-4.10-bin.zip"],
-    visibility = ["//tools/base/build-system:__pkg__"],
-)
-
-#######
-# gradle 4.10.1
-#######
-
-# do not use directly. Use //tools/base/build-system:gradle
-filegroup(
-    name = "gradle-distrib-4.10.1",
-    srcs = ["gradle-4.10.1-bin.zip"],
-    visibility = ["//tools/base/build-system:__pkg__"],
-)
-
-#######
 # gradle 5.0
 #######
 
@@ -108,5 +31,16 @@ filegroup(
 filegroup(
     name = "gradle-distrib-5.0",
     srcs = ["gradle-5.0-bin.zip"],
+    visibility = ["//tools/base/build-system:__pkg__"],
+)
+
+#######
+# gradle 5.1-milestone-1
+#######
+
+# do not use directly. Use //tools/base/build-system:gradle
+filegroup(
+    name = "gradle-distrib-5.1-milestone-1",
+    srcs = ["gradle-5.1-milestone-1-bin.zip"],
     visibility = ["//tools/base/build-system:__pkg__"],
 )
